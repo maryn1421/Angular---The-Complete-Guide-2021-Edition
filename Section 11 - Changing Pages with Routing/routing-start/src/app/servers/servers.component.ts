@@ -17,7 +17,7 @@ export class ServersComponent implements OnInit {
   }
 
   reload() {
-    this.router.navigate(["/servers"], {relativeTo: this.route})
+    this.router.navigate(["/servers"], {relativeTo: this.route, queryParamsHandling: 'preserve'})
   }
 
 }
